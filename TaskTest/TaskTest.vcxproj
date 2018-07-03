@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{F6D54C97-132E-4894-AB2F-04950A79D3A5}</ProjectGuid>
-    <RootNamespace>SelectTest</RootNamespace>
+    <ProjectGuid>{E60BFBAE-1150-42CE-818F-2FD5690F006B}</ProjectGuid>
+    <RootNamespace>TaskTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\work2018\cpp_project\TaskQueue\TaskQueue\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,23 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\TaskQueue\src\BitVector.cpp" />
-    <ClCompile Include="..\TaskQueue\src\ByteQueue.cpp" />
-    <ClCompile Include="..\TaskQueue\src\CommonFunc.c" />
-    <ClCompile Include="..\TaskQueue\src\DequeItem.cpp" />
-    <ClCompile Include="..\TaskQueue\src\GeneralDeque.cpp" />
-    <ClCompile Include="..\TaskQueue\src\TaskItem.cpp" />
-    <ClCompile Include="..\TaskQueue\src\TaskQueue.cpp" />
     <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\TaskQueue\include\BitVector.h" />
-    <ClInclude Include="..\TaskQueue\include\ByteQueue.h" />
-    <ClInclude Include="..\TaskQueue\include\CommonFunc.h" />
-    <ClInclude Include="..\TaskQueue\include\DequeItem.h" />
-    <ClInclude Include="..\TaskQueue\include\GeneralDeque.h" />
-    <ClInclude Include="..\TaskQueue\include\TaskItem.h" />
-    <ClInclude Include="..\TaskQueue\include\TaskQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
