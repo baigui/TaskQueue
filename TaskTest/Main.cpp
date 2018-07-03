@@ -1,7 +1,7 @@
 #include <Winsock.h>
 #include <string>
 #include <iostream>
-#include "TaskQueue.h"
+#include <TaskQueue.h>
 
 using namespace std;
 
@@ -12,7 +12,18 @@ using namespace std;
 int main()
 {
 
-	task
+	TaskQueue *_tasks = new TaskQueue();
 
+	TaskItem *item = new TaskItem(
+		[](TaskItem * item) {
+		cout << "ÎÒÛ´óË¾ñR" << endl;
+		return true;
+
+	}, 0, false, 'D'
+	);
+
+	_tasks->scheduleTask(item);
+	_tasks->startWork();
+	getchar();
 	return 0;
 }

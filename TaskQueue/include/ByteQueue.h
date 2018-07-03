@@ -1,5 +1,4 @@
-﻿//
-// Created by 张圣辉 on 16/8/26.
+﻿
 //
 
 #ifndef PROJECT_BYTEQUEUE_H

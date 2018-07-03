@@ -1,10 +1,9 @@
 /**
- * Created by 张圣辉 on 16/8/18.
  */
 
 #include "CommonFunc.h"
 
-#if defined(WIN32) || defined(WIN64) || defined(_CONSOLE)
+#if defined(_WIN32) || defined(_WIN64) || defined(_CONSOLE)
 #include <WinSock2.h>
 #include <windows.h>
 #include <stdint.h>
@@ -33,7 +32,7 @@
 
 int sleepSocketCount = 0;
 
-#if defined(WIN32) || defined(WIN64) || defined(_CONSOLE)
+#if defined(_WIN32) || defined(_WIN64) || defined(_CONSOLE)
 SOCKET sleepSocket;
 #else
 int sleepSocket;

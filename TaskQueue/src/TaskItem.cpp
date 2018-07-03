@@ -1,5 +1,4 @@
 ﻿//
-// Created by 张圣辉 on 16/8/27.
 //
 #include <thread>
 #include "TaskItem.h"

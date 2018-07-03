@@ -16,51 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\BitVector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\ByteQueue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\CommonFunc.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\DequeItem.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\GeneralDeque.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\TaskItem.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TaskQueue\src\TaskQueue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\TaskQueue\include\BitVector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\ByteQueue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\CommonFunc.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\DequeItem.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\GeneralDeque.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\TaskItem.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\TaskQueue\include\TaskQueue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

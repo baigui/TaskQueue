@@ -1,12 +1,11 @@
-﻿//
-// Created by 张圣辉 on 16/8/26.
+﻿
 //
 
 #include "ByteQueue.h"
 #include <string.h>
 #include <stdlib.h>
 
-#if defined(WIN32) || defined(WIN64) || defined(_CONSOLE)
+#if defined(WIN32) || defined(_WIN64) || defined(_CONSOLE)
 #include <winsock2.h>
 #include <stdint.h>
 #define htonll(x) ((1==htonl(1)) ? (x) : ((uint64_t)htonl((x) & 0xFFFFFFFF) << 32) | htonl((x) >> 32))

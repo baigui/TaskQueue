@@ -1,5 +1,4 @@
 //
-// Created by 张圣辉 on 16/10/10.
 //
 
 #ifndef PROJECT_BIT_VECTOR_HH

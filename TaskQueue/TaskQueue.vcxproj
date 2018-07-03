@@ -39,7 +39,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -84,6 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\work\taskQueue\TaskQueue\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,6 +116,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\BitVector.h" />
+    <ClInclude Include="include\ByteQueue.h" />
+    <ClInclude Include="include\CommonFunc.h" />
+    <ClInclude Include="include\DequeItem.h" />
+    <ClInclude Include="include\GeneralDeque.h" />
+    <ClInclude Include="include\TaskItem.h" />
+    <ClInclude Include="include\TaskQueue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BitVector.cpp" />
+    <ClCompile Include="src\ByteQueue.cpp" />
+    <ClCompile Include="src\CommonFunc.c" />
+    <ClCompile Include="src\DequeItem.cpp" />
+    <ClCompile Include="src\GeneralDeque.cpp" />
+    <ClCompile Include="src\TaskItem.cpp" />
+    <ClCompile Include="src\TaskQueue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

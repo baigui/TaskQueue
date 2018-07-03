@@ -115,23 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\TaskQueue\src\BitVector.cpp" />
-    <ClCompile Include="..\TaskQueue\src\ByteQueue.cpp" />
-    <ClCompile Include="..\TaskQueue\src\CommonFunc.c" />
-    <ClCompile Include="..\TaskQueue\src\DequeItem.cpp" />
-    <ClCompile Include="..\TaskQueue\src\GeneralDeque.cpp" />
-    <ClCompile Include="..\TaskQueue\src\TaskItem.cpp" />
-    <ClCompile Include="..\TaskQueue\src\TaskQueue.cpp" />
     <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\TaskQueue\include\BitVector.h" />
-    <ClInclude Include="..\TaskQueue\include\ByteQueue.h" />
-    <ClInclude Include="..\TaskQueue\include\CommonFunc.h" />
-    <ClInclude Include="..\TaskQueue\include\DequeItem.h" />
-    <ClInclude Include="..\TaskQueue\include\GeneralDeque.h" />
-    <ClInclude Include="..\TaskQueue\include\TaskItem.h" />
-    <ClInclude Include="..\TaskQueue\include\TaskQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
