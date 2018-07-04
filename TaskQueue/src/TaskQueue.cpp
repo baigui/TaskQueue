@@ -22,7 +22,7 @@ void TaskQueue::scheduleTask(TaskItem *task) {
 	if (task == nullptr)
 		return;
 	TaskItem *item = static_cast<TaskItem *>(getTail());
-	if (item == nullptr) {
+	if (item == nullptr) { //第一次添加任务，就直接添加，完成任务。
 		insertTail(task);
 	} else {
 		//从后往前进行遍历
@@ -124,8 +124,8 @@ void TaskQueue::_thread_work(TaskQueue *tasks) {
 }
 
 void TaskQueue::startWork() {
-    if(!_threadWork){
-        while (_threadAlive) {
+    if(!_threadWork){  //这个大概是为了在工作过程中，就什么也不做，因为等下他会自动处理
+        while (_threadAlive) { //如果有线程在工作，就先定时唤醒，
             sleepUs(_precisionUsec);
         }
         _threadWork = true;

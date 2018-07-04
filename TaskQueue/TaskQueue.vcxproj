@@ -116,8 +116,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\BitVector.h" />
-    <ClInclude Include="include\ByteQueue.h" />
     <ClInclude Include="include\CommonFunc.h" />
     <ClInclude Include="include\DequeItem.h" />
     <ClInclude Include="include\GeneralDeque.h" />
@@ -125,8 +123,6 @@
     <ClInclude Include="include\TaskQueue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\BitVector.cpp" />
-    <ClCompile Include="src\ByteQueue.cpp" />
     <ClCompile Include="src\CommonFunc.c" />
     <ClCompile Include="src\DequeItem.cpp" />
     <ClCompile Include="src\GeneralDeque.cpp" />

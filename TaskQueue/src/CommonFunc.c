@@ -88,7 +88,7 @@ void sleepUs(int64_t us) {
 	fd_set dummy = sleepSocketFds;
 	tv.tv_sec = us / 1000000L;
 	tv.tv_usec = (int) (us % 1000000L);
-	select(0, 0, 0, &dummy, &tv);
+	select(0, 0, 0, &dummy, &tv);     //这里就是简单的阻塞。函数停止运行罢了。
 }
 
 void printStackTrace() {
